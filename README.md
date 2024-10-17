@@ -1,6 +1,3 @@
-Here’s the translation of the first response into English:
-
-```md
 # Documentation for the NestJS Application
 
 ## Table of Contents
