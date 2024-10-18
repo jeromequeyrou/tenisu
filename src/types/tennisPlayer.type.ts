@@ -1,4 +1,4 @@
-export type Tenisman = {
+export type TennisPlayer = {
   id: number;
   firstname: string;
   lastname: string;

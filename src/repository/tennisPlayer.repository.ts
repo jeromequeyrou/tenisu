@@ -1,19 +1,19 @@
 import { Injectable } from '@nestjs/common';
 import data from '../data/headtohead';
-import { Tenisman } from 'src/types/tenisman.type';
+import { TennisPlayer } from 'src/types/tennisPlayer.type';
 import { sortBy, get } from 'lodash';
 
 @Injectable()
-export class TenismanRepository {
-  getAll(): Tenisman[] {
+export class TennisPlayerRepository {
+  getAll(): TennisPlayer[] {
     return data.players;
   }
 
-  getAllSortedBy(field: string): Tenisman[] {
+  getAllSortedBy(field: string): TennisPlayer[] {
     return sortBy(this.getAll(), field);
   }
 
-  getBy(field: string, value): Tenisman {
+  getBy(field: string, value): TennisPlayer {
     return this.getAll().find((e) => `${get(e, field)}` === value);
   }
 }

@@ -95,7 +95,7 @@ The application exposes several REST endpoints through controllers. Here are som
 
 - **Retrieve all tennis players**:
   ```bash
-  GET /tenisman
+  GET /tennisPlayer
   ```
 
   Response: Returns a list of tennis players sorted by rank.
@@ -128,7 +128,7 @@ The application exposes several REST endpoints through controllers. Here are som
 
 - **Retrieve a tennis player by ID**:
   ```bash
-  GET /tenisman/:id
+  GET /tennisPlayer/:id
   ```
 
   Response: Returns the details of the tennis player with the provided ID.
@@ -159,7 +159,7 @@ The application exposes several REST endpoints through controllers. Here are som
 
 - **Retrieve global statistics of the players**:
   ```bash
-  GET /tenisman/stats
+  GET /tennisPlayer/stats
   ```
 
   Response: Returns statistics on all tennis players, including the average BMI, median height, and the country with the best win rate.

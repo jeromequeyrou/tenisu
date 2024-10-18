@@ -1,11 +1,11 @@
 import { Module } from '@nestjs/common';
-import { TenismanRepository } from './repository/tenisman.repository';
-import { TenismanService } from './service/tenisman.service';
-import { TenismanController } from './controller/tenisman.controller';
+import { TennisPlayerRepository } from './repository/tennisPlayer.repository';
+import { TennisPlayerService } from './service/tennisPlayer.service';
+import { TennisPlayerController } from './controller/tennisPlayer.controller';
 
 @Module({
   imports: [],
-  controllers: [TenismanController],
-  providers: [TenismanRepository, TenismanService],
+  controllers: [TennisPlayerController],
+  providers: [TennisPlayerRepository, TennisPlayerService],
 })
 export class AppModule {}

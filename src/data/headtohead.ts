@@ -1,4 +1,4 @@
-import { Tenisman } from 'src/types/tenisman.type';
+import { TennisPlayer } from 'src/types/tennisPlayer.type';
 
 export default {
   players: [
@@ -113,4 +113,4 @@ export default {
       },
     },
   ],
-} as { players: Tenisman[] };
+} as { players: TennisPlayer[] };
